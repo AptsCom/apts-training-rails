@@ -34,6 +34,7 @@ class PropertiesController < ApplicationController
 
   # GET /properties/1/edit
   def edit
+    @management_companies = ManagementCompany.all
     @property = Property.find(params[:id])
   end
 
